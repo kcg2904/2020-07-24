@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 
+import dao.UserDAOImpl;
 import dto.UserDTO;
 
 public class MainClass {
@@ -49,9 +50,9 @@ public class MainClass {
 		}
 		// 전화번호 하이픈 기능 사용
 //		String MyMobile = MyUtil.makePhoneNumber(mobile); // 자바 정규식
-//		UserDAOImpl ud = new UserDAOImpl();		
-//		ud.insert(dto);
-//		ud.update(dto);
+		UserDAOImpl ud = new UserDAOImpl();		
+		ud.insert(dto);
+		ud.update(dto);
 	}
 
 }
